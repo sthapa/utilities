@@ -1,0 +1,7 @@
+#User-VO map
+# #comment line, format of each regular line line: account VO
+# Next 2 lines with VO names, same order, all lowercase, with case (lines starting with #voi, #VOc)
+#voi osg cdf des DOSAR dzero dzero fermilab geant4 glow i2u2 mis nanohub ops osgedu star usatlas usatlas usatlas usatlas uscms uscms uscms uscms uscms uscms uscms uscms osgedu
+#VOc OSG CDF DES DOSAR DZERO DZERO FermiLab GEANT4 GLOW I2U2 MIS NANOHUB ops OSGEDU STAR usatlas usatlas usatlas usatlas uscms uscms uscms uscms uscms uscms uscms uscms OSGEDU
+#---- accounts for vo: osg ----#
+USERNAME osg

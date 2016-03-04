@@ -22,8 +22,8 @@ yum install -y slurm-14.11.7-1.el6.x86_64.rpm slurm-munge-14.11.7-1.el6.x86_64.r
 
 
 # copy config files
-cp ~sthapa/slurm-configs/slurm.conf /etc/slurm/slurm.conf
-cp ~sthapa/slurm-configs/slurmdbd.conf /etc/slurm/slurmdbd.conf
+cp ./slurm.conf /etc/slurm/slurm.conf
+cp ./slurmdbd.conf /etc/slurm/slurmdbd.conf
 
 #setup config files
 local_hostname=`hostname -s`
@@ -65,7 +65,7 @@ service slurmdbd restart
 # add osg user map
 mkdir /var/lib/osg
 chmod 755 /var/lib/osg
-cp ~sthapa/slurm-configs/user-vo-map /var/lib/osg/user-vo-map
+cp ./user-vo-map /var/lib/osg/user-vo-map
 perl -pi -e "s/USERNAME/$username/g" /var/lib/osg/user-vo-map
 
 cd $cur_dir
