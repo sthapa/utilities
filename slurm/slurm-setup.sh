@@ -17,7 +17,7 @@ yum install -y --enablerepo=epel mysql-server mysql-devel
 wget "http://vdt.cs.wisc.edu/upstream/slurm/$version/slurm-$version.tar.bz2"
 rpmbuild -tb slurm-$version.tar.bz2
 cd /root/rpmbuild/RPMS/x86_64/
-yum install -y slurm-$version.el6.x86_64.rpm slurm-munge-$version.el6.x86_64.rpm  slurm-torque-$version-1.el6.x86_64.rpm  slurm-sql-$version-1.el6.x86_64.rpm  slurm-perlapi-$version-1.el6.x86_64.rpm slurm-plugins-$version-1.el6.x86_64.rpm slurm-slurmdbd-$version-1.el6.x86_64.rpm
+yum install -y slurm-$version-1.el6.x86_64.rpm slurm-munge-$version-1.el6.x86_64.rpm  slurm-torque-$version-1.el6.x86_64.rpm  slurm-sql-$version-1.el6.x86_64.rpm  slurm-perlapi-$version-1.el6.x86_64.rpm slurm-plugins-$version-1.el6.x86_64.rpm slurm-slurmdbd-$version-1.el6.x86_64.rpm
 cd -
 
 # copy config files
